@@ -1,50 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Famous Places</title>
+    <title>Interactive Restaurant Menu</title>
 </head>
+
 <body>
 
-    <h1>Famous Places</h1>
+    <h1>Interactive Restaurant Menu</h1>
 
-    <h2>Taj Mahal</h2>
-    <p>A white marble mausoleum in Agra, built in the 17th century.</p>
-    <img src="images (1).jpeg" width="300" height="200" alt="Taj Mahal">
+    <p>Click on different food items to learn more about them.</p>
 
-    <h2>Jaipur City Palace</h2>
-    <p>A royal palace in the Pink City, known for its grand architecture.</p>
-    <img src="images (2).jpeg" width="300" height="200" alt="Jaipur City Palace">
+    <img src="food.jpg" width="600" height="400"
+         alt="Restaurant Food"
+         usemap="#foodmap">
 
-    <h2>Goa Beaches</h2>
-    <p>Palm-lined beaches with calm water and lively sunset views.</p>
-    <img src="images (3).jpeg" width="300" height="200" alt="Goa beach">
+    <map name="foodmap">
 
-    <h2>Kerala Backwaters</h2>
-    <p>A network of lakes, canals, and lagoons best explored by houseboat.</p>
-    <img src="images (4).jpeg" width="300" height="200" alt="Kerala backwaters">
+        <!-- Circle 1: Pizza -->
+        <area shape="circle"
+              coords="150,270,70"
+              href="https://en.wikipedia.org/wiki/Pizza"
+              alt="Pizza"
+              title="Pizza"
+              target="_blank">
 
-    <h2>Manali</h2>
-    <p>A hill station in the Himalayas, popular for snow, trekking, and valleys.</p>
-    <img src="images (5).jpeg" width="300" height="200" alt="Manali mountains">
+        <!-- Circle 2: Burger -->
+        <area shape="circle"
+              coords="100,100,45"
+              href="https://en.wikipedia.org/wiki/Hamburger"
+              alt="Burger"
+              title="Burger"
+              target="_blank">
 
-    <h2>External Links</h2>
-    <ul>
-        <li><a href="https://en.wikipedia.org/wiki/India" target="_blank">Learn More About India</a></li>
-        <li><a href="https://www.incredibleindia.gov.in" target="_blank">Visit Incredible India</a></li>
-    </ul>
+        <!-- Rectangle 1: French Fries -->
+        <area shape="rect"
+              coords="250,130,350,220"
+              href="https://en.wikipedia.org/wiki/French_fries"
+              alt="French Fries"
+              title="French Fries"
+              target="_blank">
 
-    <p><a href="index.html">Back to Home</a></p>
+        <!-- Rectangle 2: Menu Card -->
+        <area shape="rect"
+              coords="400,250,550,350"
+              href="https://en.wikipedia.org/wiki/Menu"
+              alt="Menu Card"
+              title="Menu Card"
+              target="_blank">
 
-    <p>
-        <a href="index.html">Home</a> |
-        <a href="destinations.html">Destinations</a> |
-        <a href="foods.html">Foods</a> |
-        <a href="places.html">Places</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact</a>
-    </p>
+        <!-- Polygon 1: Sandwich -->
+        <area shape="poly"
+              coords="350,40,430,70,400,140,320,110"
+              href="https://en.wikipedia.org/wiki/Sandwich"
+              alt="Sandwich"
+              title="Sandwich"
+              target="_blank">
+
+        <!-- Polygon 2: Cake Slice -->
+        <area shape="poly"
+              coords="450,150,520,180,500,240,430,210"
+              href="https://en.wikipedia.org/wiki/Cake"
+              alt="Cake Slice"
+              title="Cake Slice"
+              target="_blank">
+
+        <!-- Default Area: Remaining Image -->
+        <area shape="default"
+              href="https://en.wikipedia.org/wiki/Food"
+              alt="Other Food"
+              title="Explore Other Food"
+              target="_blank">
+
+    </map>
+
+    <h2>Food Items</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Food Item</th>
+            <th>Shape</th>
+        </tr>
+
+        <tr>
+            <td>Pizza</td>
+            <td>Circle</td>
+        </tr>
+
+        <tr>
+            <td>Burger</td>
+            <td>Circle</td>
+        </tr>
+
+        <tr>
+            <td>French Fries</td>
+            <td>Rectangle</td>
+        </tr>
+
+        <tr>
+            <td>Menu Card</td>
+            <td>Rectangle</td>
+        </tr>
+
+        <tr>
+            <td>Sandwich</td>
+            <td>Polygon</td>
+        </tr>
+
+        <tr>
+            <td>Cake Slice</td>
+            <td>Polygon</td>
+        </tr>
+
+        <tr>
+            <td>Remaining Area</td>
+            <td>Default</td>
+        </tr>
+    </table>
 
 </body>
 </html>
-
-
